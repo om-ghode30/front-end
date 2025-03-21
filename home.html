@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+  
+  <link rel="stylesheet" href="./assets1/fonts.css">
+  <link rel="stylesheet" href="./assets1/variables.css"> 
+  <!-- <link rel="stylesheet" href="./assets1/2-reset.css">
+  <link rel="stylesheet" href="./assets1/3-typography.css"> -->
+  <!-- <link rel="stylesheet" href="./assets1/4-component.css"> -->
+
+  <!-- CUSTOM CSS INCLUSIONS -->
+  <link rel="stylesheet" href="./assets1/style.css">
+
+  <!-- RESPONSIVITY CSS INCLUSIONS -->
+  <link rel="stylesheet" href="./assets1/media-queries.css">
+
+  <!-- FAVICON LINK -->
+  <link rel="icon" href="http://localhost/assest1/assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- TITLE OF THE PAGE -->
+  <title>NewsGrid | The Official News Portal |  Home</title>
+
+  <!-- FONTAWESOME LINK -->
+  <link rel="stylesheet" href="./assets1/all.min.css">
+</head>
+<style>
+
+</style>
+<body>
+
+  <!-- ======== BACK TO TOP BUTTON ======== -->
+  <button onclick="topFunction()" class="topNavBtn" id="topNavBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar">
+    <div class="logo"><a href="#"><img src="./assets1/logo.png"></a></div>
+    <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn" class="input">
+    <ul class="ul">
+      <!-- We ECHO class current based upon the boolean variables used in above PHP Snippet -->
+      <li><a href="#" class="current">Home</a></li>
+      <li>
+        <label for="btn-1" class="show">Categories +</label>
+        <a href="#">Categories</a>
+        <input type="checkbox" id="btn-1" class="input">
+        <ul>
+                    <li><a href="#">Canteen</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">More +</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Bookmarks</a></li>
+            <li>
+        <label for="btn-2" class="show">Login +</label>
+        <a href="#">Login</a>
+        <input type="checkbox" id="btn-2" class="input">
+        <ul>
+          <li><a href="#">Reader</a></li>
+          <li><a href="#">Author</a></li>
+        </ul>
+      </li>
+            <li>
+        <a href="#">
+          <span>Search</span>
+          <i id="search-icon" class="fas fa-search"></i>
+        </a>
+      </li>
+          </ul>
+  </nav><!-- ======== IMAGE SLIDER ======== -->
+<header class="img-slider">
+  
+    <div class="slide active">
+      <img src="./assets1/article-8-1616580658.webp">
+      <div class="info">
+        <div class=" tag tag-yellow">Health</div>  <div class="tag tag-trend">TRENDING</div>
+        <h1>COVID-19: New double mutant strain detected in Ind . . . . .</h1>
+        <p>
+          India detects novel COVID-19 strain. It has been described as a double mutant virus variant. A total . . . . .
+        </p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div><div class="navigation"><div class="slide-nav-btn active"></div><div class="slide-nav-btn "></div><div class="slide-nav-btn "></div><div class="slide-nav-btn "></div>  </div>
+</header>
+<!-- SCRIPT FOR IMAGE SLIDER -->
+<script src="./assets1/image-slider.js.download"></script>
+<!-- Article List Container -->
+<section class="py-1 category-list">
+  <div class="container">
+    <h2 class="headings">Articles</h2>
+    <div class="card-container">
+      
+    <article class="card">
+      <a href="#" class="bookmark" title="Add to Bookmarks">
+      <i class="far fa-bookmark"></i>
+    </a><div class="card-img">
+        <img src="./assets1/article-6-1737623814.jpg">
+      </div>
+      <div>
+        <div class="tag tag-purple"><a href="#">Sports</a></div>
+        <h3 class="card-title" href="./article.html">
+          D. Y. Patil Sports Start: 2nd Feb 2025 to 12th Feb 2025 . . . . .
+        </h3>
+        <p class="card-data">
+          Sports and studies go hand-in-hand in shaping a balanced life. Just like focusing on academics, engaging in sports is crucial for physical fitness, me . . . . .
+        </p>
+        <a href="#" class="btn btn-card">Read More <span>↠ </span>
+        </a>
+      </div>
+    </article>
+    <article class="card">
+      <a href="#" class="bookmark" title="Add to Bookmarks">
+      <i class="far fa-bookmark"></i>
+    </a><div class="card-img">
+        <img src="./assets1/article-3-1619459471.webp">
+      </div>
+      <div>
+        <div class="tag tag-yellow"><a href="#">Canteen</a></div>
+        <h3 class="card-title" href="./article.html">
+          Why it is important to have white onions in summer, exp . . . . .
+        </h3>
+        <p class="card-data">
+          ​"#"1 Eat white onion to stay cool during summer
+
+As summer is here, it is important to make necessary changes in our daily diet, so that our body i . . . . .
+        </p>
+        <a href="#" class="btn btn-card">Read More <span>↠ </span>
+        </a>
+      </div>
+    </article>
+    <article class="card">
+      <a href="#" class="bookmark" title="Add to Bookmarks">
+      <i class="far fa-bookmark"></i>
+    </a><div class="card-img">
+        <img src="./assets1/article-8-1616580658.webp">
+      </div>
+      <div>
+        <div class="tag tag-yellow"><a href="#">Health</a></div>  <div class="tag tag-trend"><a href="#">TRENDING</a></div>
+        <h3 class="card-title" href="./article.html">
+          COVID-19: New double mutant strain detected in India al . . . . .
+        </h3>
+        <p class="card-data">
+          India detects novel COVID-19 strain. It has been described as a double mutant virus variant. A total of 711 variants of concerns detected in India. CO . . . . .
+        </p>
+        <a href="#" class="btn btn-card">Read More <span>↠ </span>
+        </a>
+      </div>
+    </article>
+    <a href="#" class="card card-more d-flex">
+      <h3>MORE +</h3>
+    </a>
+    
+    </div>
+  </div>
+</section>
+
+
+<!-- Category List Container -->
+<section class="py-1 category-list">
+  <div class="container">
+    <h2 class="headings">Categories</h2>
+    <div class="card-container">
+      
+    <article class="card">
+      <div class="card-img">
+        <img src="./assets1/Jobs &amp; Internships1737608236.jpeg">
+      </div>
+      <div>
+        <h3 class="card-title text-center" href="./article.html">
+          Jobs &amp; Internships
+        </h3>
+        <p class="card-data">
+          Jobs &amp; Internships is a dedicated section of CampusConnect that connects students with career opportunities. It features job postings, internship openings, and career resources to help students build their professional skills. Teachers and professionals can share guidance on resumes, interviews, and career planning, making it a one-stop hub for stu
+        </p>
+        <div class="btn-block">
+          <a href="#" class="btn btn-card">
+            Read More 
+            <span>↠ </span>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-img">
+        <img src="./assets1/Question Paper1737609371.png">
+      </div>
+      <div>
+        <h3 class="card-title text-center" href="./article.html">
+          Question Paper
+        </h3>
+        <p class="card-data">
+          It provides students with access to previous exam question papers. This feature helps students prepare effectively by giving them insights into the exam pattern, important topics, and question trends. It serves as a centralized resource for academic revision, making exam preparation more efficient and organized.
+        </p>
+        <div class="btn-block">
+          <a href="#" class="btn btn-card">
+            Read More 
+            <span>↠ </span>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-img">
+        <img src="./assets1/Sports1616565300.jpg">
+      </div>
+      <div>
+        <h3 class="card-title text-center" href="./article.html">
+          Sports
+        </h3>
+        <p class="card-data">
+          And it's a six or GOALLL!!!! are a few things that make us feel like a child. Sports, tournaments and league matches, where is each team standing, what is new in the world of sports??
+        </p>
+        <div class="btn-block">
+          <a href="#" class="btn btn-card">
+            Read More 
+            <span>↠ </span>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-img">
+        <img src="./assets1/Education1616565234.jpg">
+      </div>
+      <div>
+        <h3 class="card-title text-center" href="./article.html">
+          Education
+        </h3>
+        <p class="card-data">
+          Education is everything to survive in this competetive world. what is the latest when it comes to education and need to get education to every part of the world and the poor.
+        </p>
+        <div class="btn-block">
+          <a href="#" class="btn btn-card">
+            Read More 
+            <span>↠ </span>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-img">
+        <img src="./assets1/Food1616565209.jpg">
+      </div>
+      <div>
+        <h3 class="card-title text-center" href="./article.html">
+          Canteen
+        </h3>
+        <p class="card-data">
+          Canteen Updates keeps students and staff informed about the latest news from the college canteen, including new menu items, special offers, and schedule changes. Stay updated and never miss important announcements!
+        </p>
+        <div class="btn-block">
+          <a href="#" class="btn btn-card">
+            Read More 
+            <span>↠ </span>
+          </a>
+        </div>
+      </div>
+    </article>
+    <a href="#" class="card card-more d-flex">
+      <h3>MORE +</h3>
+    </a>
+        </div>
+  </div>
+</section>
+
+
+<!-- JQUERY SCRIPT -->
+<script src="./assets1/jquery-3.5.0.js.download"></script>
+
+<!-- SCRIPT FOR BACK TO TOP BUTTON -->
+<script src="./assets1/back-to-top.js.download"></script>
+
+<!-- SCRIPT FOR NAVBAR COLLAPSE -->
+<script src="./assets1/navbar-collapse.js.download"></script>
+
+
+</body></html>
